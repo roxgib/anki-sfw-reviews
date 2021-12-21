@@ -1,0 +1,1 @@
+Memory buffs will know that a bit of filth is like superglue for human memory. Unfortunately, adding dirty mnemonics or pics to Anki cards can get you into trouble if you're reviewing them in public and they pop up without warning. This addon adds a button to automatically bury or filter NSFW notes, letting you review safely in public.
