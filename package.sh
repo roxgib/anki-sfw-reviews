@@ -1,0 +1,1 @@
+zip -r -X SFW_Reviewer.ankiaddon ./__init__.py ./manifest.json
