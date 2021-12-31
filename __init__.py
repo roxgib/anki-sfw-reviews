@@ -19,7 +19,7 @@ def buryUnburyNSFW() -> None:
         # Bury cards
         ids = mw.col.find_cards("tag:nsfw is:due")
         mw.col.sched.bury_cards(ids)
-        tooltip(f"Buried {len(ids)} card{'' if {len(ids)} == 1 else 's'}.")
+        tooltip(f"Buried {len(ids)} card{'' if len(ids) == 1 else 's'}.")
         
         with open(ids_filename, 'w') as f:
             f.write(json.dumps([str(date.today()),list(ids)]))
@@ -31,7 +31,7 @@ def buryUnburyNSFW() -> None:
         # Unbury cards
         ids = ids[1]
         mw.col.sched.unbury_cards(ids)
-        tooltip(f"Unburied {len(ids)} card{'' if {len(ids)} == 1 else 's'}.")
+        tooltip(f"Unburied {len(ids)} card{'' if len(ids) == 1 else 's'}.")
         
         with open(ids_filename, 'w') as f:
             f.write(json.dumps([str(date.today()),'']))
